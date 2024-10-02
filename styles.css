@@ -1,0 +1,722 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+  color: #5A5A5A;  
+  overflow-x: hidden;    
+}
+
+header {
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+.social-icons{
+  width: 100%;
+  height: 7vh;
+  background-color: #95172C;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+  padding-right: 20px;
+  margin-left: auto; 
+}
+
+.social-icons a {
+  color: #FFFFFF;
+  font-size: 30px;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: transform 0.3s;  
+}
+
+.social-icons a:hover {
+  color: #E8BF78;
+  transform: scale(1.2); 
+}
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.logo {
+  width: 20%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  margin-left: 50px; 
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+}
+
+.nav {
+  width: 80%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 50px;
+}
+  
+.nav ul {
+  width: 100%;
+  height: 15vh;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+
+.nav-link {
+  text-decoration: none;
+  color:  #5A5A5A;
+  font-size: 18px;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link::before, .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #FFFFFF;
+  transition: width 0.3s ease;
+}
+
+.nav-link::before {
+  left: 50%;
+}
+
+.nav-link::after {
+  right: 50%;
+}
+
+.nav-link:hover::before, .nav-link:hover::after {
+  width: 50%;
+}
+
+.nav-link:hover {
+  color: #95172C;
+}
+/* Contact Button Styles */
+.contact-container {
+  text-align: center;
+}
+
+button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-button {
+  background-color: #5A5A5A; 
+  color: #FFFFFF;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #E8BF78; 
+}
+
+.contact-button:active {
+  background-color: #95172C; 
+}
+
+.home {
+  width: 100%;
+  height: 78vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.home-left {
+  width: 100%;
+  height: 100%;;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-image: url(https://www.maelle-moreno.fr/wp-content/uploads/2023/08/fond-beige.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.home-left img {
+  width: 220px;
+  height: 320px;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  border: 5px solid #FFFFFF;
+  top: 120px;
+  left: 350px;
+
+}
+
+.home-right {
+  width: 100%;
+  height: 100%;;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #F3F1F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* Button Styles */
+.button-container {
+  text-align: center;
+}
+
+.about-button {
+  background-color: #95172C; 
+  color: #FFFFFF;
+
+  transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #E8BF78; 
+}
+
+.about-button:active {
+  background-color: #5A5A5A; /
+}
+.about, .skills, .experience, .projects, .contact {
+  width: 100%;
+  height: 100vh;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.about-left {
+  width: 100%;
+  height: 100%;;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #F3F1F2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.about-right {
+  width: 100%;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url(https://i.pinimg.com/1200x/18/8d/51/188d5153b6940a765489b0ed39bc9b8a.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.left {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  position: relative;
+  padding-left: 30px;
+
+}
+
+.left img{
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  background-image: url(https://www.maelle-moreno.fr/wp-content/uploads/2023/08/fond-beige.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.right * {
+  margin-top: 50px;
+
+}
+
+.skills {
+  background-color: #E7E1DA;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.diaporama {
+  width: 1400px;
+  height: 50vh;
+  overflow: hidden;
+  padding: 20px 0;
+ 
+}
+
+.diapo {
+  width: 1400px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  animation: scroll 20s linear infinite;
+}
+
+
+.icon {
+  min-width: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.icon img {
+  width: 200px;
+  height: 25vh;
+  object-fit: contain;
+}
+
+/* Animation for Continuous Scrolling */
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.absolut-link {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  width: 40px;
+  left: calc(50% - 20px);
+  
+}
+
+.absolut-link svg {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+  40% {
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+  40% {
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+  }
+}
+
+.experience {
+  background-color: #F3F1F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience h2{
+  height: 20vh;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#downloadBtn {
+  width: 300px;
+  color: #FFFFFF;
+  background-color: #95172C;
+  margin-bottom: 50px;
+}
+
+#downloadBtn:hover {
+  background-color: #E8BF78;
+}
+
+.formations-postes{
+  width: 100%;
+  height: 150vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carte {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s;
+  background-image: url(https://www.maelle-moreno.fr/wp-content/uploads/2023/08/fond-beige.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.carte:hover {
+  transform: scale(1.05);
+}
+
+.un {
+  grid-column: 1/2;
+  grid-row: 1/2; 
+}
+
+.deux {
+  grid-column: 2/3;
+  grid-row: 1/2; 
+}
+
+.trois {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  
+}
+
+.quatre {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.cinq {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.six{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.sept {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.huit {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.neuf {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.projects {
+  background-color: #E7E1DA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projets {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.projet1 {
+  width: 20%;
+  height: 40vh;
+  background-image: url(https://www.maelle-moreno.fr/wp-content/uploads/2023/08/fond-beige.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.projet2 {
+  width: 20%;
+  height: 40vh;
+  background-image: url(https://www.maelle-moreno.fr/wp-content/uploads/2023/08/fond-beige.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.projet3 {
+  width: 20%;
+  height: 40vh;
+  background-image: url(https://www.maelle-moreno.fr/wp-content/uploads/2023/08/fond-beige.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.projet4 {
+  width: 20%;
+  height: 40vh;
+  background-image: url(https://www.maelle-moreno.fr/wp-content/uploads/2023/08/fond-beige.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.citation {
+  width: 100%;
+  height: 50vh;
+  background-color: #E8BF78;
+}
+
+.citation p {
+  font-size: 40px;
+  color:#FFFFFF;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  font-style: italic;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #E7E1DA;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.photo {
+width: 100%;
+grid-column: 1/2;
+grid-row: 1/2;
+position: relative;
+overflow: hidden;
+}
+
+.inclined-image {
+  width: 50%;
+  height: 60vh;
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+  transform: rotate(-15deg); /* Incline l'image de 15 degrés */
+  transition: transform 0.3s ease; /* Transition douce pour l'effet de survol */
+  border-radius: 10px;
+}
+
+.photo:hover .inclined-image {
+  transform: rotate(15deg) scale(1.1); /* Agrandit l'image au survol */
+}
+ 
+.myForm {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 100px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #5A5A5A;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #E8BF78;
+}
+
+input[type="submit"]:active {
+  background-color: #95172C; 
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #95172C;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 20px;
+
+}
+
+.footer-logo img {
+width: 200px;
+height: 200px;
+
+}
+
+footer a {
+    color:  #FFFFFF; 
+    font-size: 50px;
+    text-decoration: none;
+    margin-left: 15px; 
+    transition: transform 0.3s
+}
+
+footer a:hover {
+  color: #E8BF78;
+  transform: scale(1.5); 
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 169px;
+  right: 39px;
+  width: 50px;
+  height: 50px;
+  background-color: #E8BF78;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+  color: #95172C;
+  border: solid #95172C;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* Empiler les éléments verticalement */
+  }
+}
+
+/* Mode sombre */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+  button.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #121212;
+      color: white;
+  }
+
+  button {
+      background-color: white;
+      color: black;
+  }
+}
+/* Pour les écrans de 768px (tablettes) et plus petits */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Empiler les éléments verticalement */
+  }
+}
+
+/* Pour les écrans de 1024px (tablettes en paysage) et plus petits */
+@media (max-width: 1024px) {
+  /* Modifiez vos styles ici pour les écrans moyens */
+}
