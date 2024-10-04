@@ -681,42 +681,34 @@ footer a:hover {
   border: solid #95172C;
 }
 
-@media (max-width: 768px) {
-  body {
-    flex-direction: column; /* Empiler les éléments verticalement */
-  }
-}
-
-/* Mode sombre */
-body.dark-mode {
-  background-color: #121212;
-  color: white;
-}
-
-  button.dark-mode {
-    background-color: white;
-    color: black;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: #121212;
-      color: white;
-  }
-
-  button {
-      background-color: white;
-      color: black;
-  }
-}
-/* Pour les écrans de 768px (tablettes) et plus petits */
-@media (max-width: 768px) {
+@media screen  and (max-width: 768px){
   .container {
-    flex-direction: column; /* Empiler les éléments verticalement */
+    flex-direction: column; 
   }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav{
+    display: none;
+  }
+
+  .home {
+    display: flex;
+  }
+
+  .home-left {
+    display: none;
+  }
+
+  .home-right {
+    background-image: url(https://www.maelle-moreno.fr/wp-content/uploads/2023/08/fond-beige.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
 }
 
-/* Pour les écrans de 1024px (tablettes en paysage) et plus petits */
-@media (max-width: 1024px) {
-  /* Modifiez vos styles ici pour les écrans moyens */
-}

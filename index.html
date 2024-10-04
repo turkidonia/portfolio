@@ -1,195 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css">
-    
-    <script src="https://kit.fontawesome.com/ec6d3f21f9.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ec6d3f21f9.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./main.js" defer></script>
     <title>TURKI DONIA - Développeuse Web</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <div class="social-icons">
-                    <button id="dark-mode-toggle">Mode Sombre</button>
-                    <a href="https://www.linkedin.com/in/donia-turki" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/turkidonia/turkidonia.github.io" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/turkidonia" target="_blank"><i class="fab fa-instagram"></i></a>
+      <header>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/donia-turki" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/turkidonia/turkidonia.github.io"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/turkidonia" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+
+        <div class="navbar">
+          <div class="logo">
+            <img src="./images/IMG_7105.PNG" alt="monlogo" />
+          </div>
+
+          <div class="nav">
+            <ul>
+              <li><a href="#home" class="nav-link">ACCUEIL</a></li>
+              <li><a href="#about" class="nav-link">À PROPOS</a></li>
+              <li><a href="#skills" class="nav-link">COMPETENCES</a></li>
+              <li><a href="#experience" class="nav-link">EXPERIENCES</a></li>
+              <li><a href="#projects" class="nav-link">PROJETS</a></li>
+            </ul>
+            <div class="contact-container">
+              <button
+                id="contactButton"
+                class="contact-button"
+                onclick="scrollToContact()"
+              >
+                CONTACT
+              </button>
             </div>
-                
-            <div class="navbar">
-                <div class="logo">
-                    <img src="./images/IMG_7105.PNG" alt="monlogo">
-                
-                </div>
-
-                <div class="nav">
-                    <ul>
-                        <li><a href="#home" class="nav-link">ACCUEIL</a></li>
-                        <li><a href="#about" class="nav-link">À PROPOS</a></li>
-                        <li><a href="#skills" class="nav-link">COMPETENCES</a></li>
-                        <li><a href="#experience" class="nav-link">EXPERIENCES</a></li>
-                        <li><a href="#projects" class="nav-link">PROJETS</a></li>
-                    </ul>
-                    <div class="contact-container">
-                        <button id="contactButton" class="contact-button" onclick="scrollToContact()">CONTACT</button>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="home" id="home">
+          <div class="home-left">
+            <img src="./images/IMG_7121.jpg" alt="ma photo" />
+          </div>
+          <div class="home-right">
+            <h1>Bienvenue!</h1>
+            <h2>MOI C'EST DONIA</h2>
+            <h2>Vous recherchez une développeuse FULL STACK?</h2>
+            <p>
+              Découvrez mon site Portfolio et plongez dans un univers où
+              créativité et professionalisme se rencontrent!
+            </p>
+            <div class="button-container">
+              <button
+                id="aboutButton"
+                class="about-button"
+                onclick="scrollToContact()"
+              >
+                ON FAIT CONNAISSANCE?
+              </button>
             </div>
-        </header>
-        <main>
-            <section class="home" id="home">
-                <div class="home-left"><img src="./images/IMG_7121.jpg" alt="ma photo"></div>
-                <div class="home-right">
-                    <h1>Bienvenue!</h1>
-                    <h2>MOI C'EST DONIA</h2>
-                    <h2>Vous recherchez une développeuse FULL STACK?</h2>
-                    <p>Découvrez mon site Portfolio et plongez dans un univers où créativité et professionalisme se rencontrent!</p>
-                    <div class="button-container"><button id="aboutButton" class="about-button" onclick="scrollToContact()">ON FAIT CONNAISSANCE?</button></div>
-                </div>  
-            </section>
-            <section class="about" id="about">
-                <div class="about-left">
-                    <div class="left"><img src="./images/IMG_7125.PNG" alt="ma photo"></div>
-                    <div class="right" id="right">
-                        <h1>DONIA TURKI</h1>
-                        <h2>Conceptrice Développeuse d'Applications</h2>
-                        <p>Passionnée par la technologie et la création, je conçois et développe des applications qui transforment des idées en expériences numériques intuitives et élégantes. Mon objectif est de créer des solutions sur mesure qui allient performance, design et innovation, tout en mettant l'utilisateur au centre de chaque projet. Avec une expertise qui s'étend de la conception à la mise en production, je m'engage à apporter une valeur ajoutée à chaque étape du développement d'applications.</p>
-                        <p>Découvrez-en plus mon profil lors d'une rencontre!</p>
-                        <div class="button-container"><button id="aboutButton" class="about-button" onclick="scrollToContact()">Contactez-moi</button></div>
-                    </div>
-                    
-                </div>
-                <div class="about-right"><img src="" alt=""></div>
-               
-            </section>
-
-            <section class="skills" id="skills">
-                <div class="diaporama">
-                    <div class="diapo">
-                        <div class="icon"><img src="./icones/figma-svgrepo-com.svg" alt="Figma"></div>
-                        <div class="icon"><img src="./icones/html-5-svgrepo-com.svg" alt="HTML"></div>
-                        <div class="icon"><img src="./icones/css-3-svgrepo-com.svg" alt="CSS"></div>
-                        <div class="icon"><img src="./icones/js-official-svgrepo-com.svg" alt="Javascript"></div>
-                        <div class="icon"><img src="./icones/github-142-svgrepo-com.svg" alt="Github"></div>
-                        <div class="icon"><img src="./icones/gitlab-svgrepo-com.svg" alt="Gitlab"></div>
-                        <div class="icon"><img src="./icones/icons8-logo-java-coffee-cup-96.svg" alt="JAVA"></div>   
-                    </div>
-
-                    <div class="absolut-link">
-                        <a href="#experience">
-                            <svg width="70" version="1.1" id="icons_1_" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                viewBox="0 0 128 128" style="enable-background:new 0 0 128 128" xml:space="preserve">
-                                <g id="row2_1_">
-                                    <g id="_x35__3_">
-                                        <path class="color-white"
-                                            d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zm21.7-63.2L70.4 70.3V41.7c0-2.2-2.3-3.2-4.4-3.2h-4c-2.2 0-3.9 1.8-3.9 3.9v28.4L42.3 58.1c-2.2 0-3.9 1.8-3.9 3.9v7.1L64 95.8l25.6-26.7V62c0-2.2-1.8-3.9-3.9-3.9z"
-                                            id="down_1_" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>   
-            </section>
-
-            <section class="experience" id="experience">
-                <h2>Téléchargez mon CV pour découvrir mes anciennes postes!</h2>
-                <button id="downloadBtn">Télécharger le CV</button>
-                <div class="formations-postes">
-                    <div class="carte un">
-                        <h1>Conceptrice Développeuse d'Applications</h1>
-                        <p>2024-2025</p>  
-                    </div>
-                    <div class="carte deux">
-                        <h1>Responsable de Pharmacie dans une clinique</h1>
-                        <p>2015-2017</p>
-                    </div>
-                    <div class="carte trois"></div>
-                    <div class="carte quatre">
-                        <h1>Directrice Administrative</h1>
-                        <p>2009-2014</p>
-                    </div>
-                    <div class="carte cinq">
-                        <h1>Diplome Master de Recherche Chimie Industrielle et Environnement</h1>
-                        <p>2008-2010</p>    
-                    </div>
-                    <div class="carte six">
-                        <h1>Cycle Ingénieur Chimie Analytique et Instrumentation</h1>
-                        <p>2004-2007</p>
-                    </div>
-                    <div class="carte sept">
-                        <h1>Cycle Préparatoire Biologie-Géologie</h1>
-                        <p>2002-2004</p>  
-                    </div>
-                    <div class="carte huit"></div>
-                    <div class="carte neuf">
-                        <h1>Baccalauréat Scientifique</h1>
-                        <p>2002</p>
-                    </div>
-                </div>
-                
-            </section>
-
-            <section class="projects" id="projects">
-                <h1>Mes Projets</h1>
-                <h2>Découvrez mes premiers pas en programmation!</h2>
-                <div class="projets">
-                    <div class="projet1"></div>
-                    <div class="projet2"></div>
-                    <div class="projet3"></div>
-                    <div class="projet4"></div>
-                </div>
-                
-            </section>
-
-            <section class="citation">
-                <p>"Le plus grand risque est de n'en prendre aucun. Dans un monde qui change si rapidement, la seule stratégie qui vous mènera à l'échec est celle consistant à ne jamais prendre de risque"
-                    - Mark Zuckerberg</p>
-            </section>
-
-            <section class="contact" id="contact">
-                <div class="photo">
-                    <img src="./images/img1.jpg" alt="contactez moi pour un entretien" class="inclined-image">
-                </div>
-                <div class="myForm">
-                    <form id="myForm"> 
-                        <label for="name">Nom:</label>
-                        <input type="text" id="name" name="name">
-                        <br><br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <br><br>
-                        <label for="tel">Télephone:</label>
-                        <input type="tel" id="tel" name="tel">
-                        <br><br>
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message" rows="7" cols="50"></textarea>
-                        <br><br>
-                        <input type="submit" value="submit">
-                    </form>
-                    <div id="errorMessages"></div> 
-                </div>    
-            </section>
-
-        </main>
-        <footer>
-            <div class="footer-logo">
-                <img src="./images/IMG_7106.PNG" alt="mon logo">
-                
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="about-left">
+            <div class="left">
+              <img src="./images/IMG_7125.PNG" alt="ma photo" />
             </div>
-            
-            <a href="https://www.linkedin.com/in/donia-turki" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/turkidonia/turkidonia.github.io" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a id="back-to-top" href="#">TOP</a>
+            <div class="right" id="right">
+              <h1>DONIA TURKI</h1>
+              <h2>Conceptrice Développeuse d'Applications</h2>
+              <p>
+                Passionnée par la technologie et la création, je conçois et
+                développe des applications qui transforment des idées en
+                expériences numériques intuitives et élégantes. Mon objectif est
+                de créer des solutions sur mesure qui allient performance,
+                design et innovation, tout en mettant l'utilisateur au centre de
+                chaque projet. Avec une expertise qui s'étend de la conception à
+                la mise en production, je m'engage à apporter une valeur ajoutée
+                à chaque étape du développement d'applications.
+              </p>
+              <p>Découvrez-en plus mon profil lors d'une rencontre!</p>
+              <div class="button-container">
+                <button
+                  id="aboutButton"
+                  class="about-button"
+                  onclick="scrollToContact()"
+                >
+                  Contactez-moi
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="about-right"><img src="" alt="" /></div>
+        </section>
 
-        </footer>
+        <section class="skills" id="skills">
+          <div class="diaporama">
+            <div class="diapo">
+              <div class="icon">
+                <img src="./icones/figma-svgrepo-com.svg" alt="Figma" />
+              </div>
+              <div class="icon">
+                <img src="./icones/html-5-svgrepo-com.svg" alt="HTML" />
+              </div>
+              <div class="icon">
+                <img src="./icones/css-3-svgrepo-com.svg" alt="CSS" />
+              </div>
+              <div class="icon">
+                <img
+                  src="./icones/js-official-svgrepo-com.svg"
+                  alt="Javascript"
+                />
+              </div>
+              <div class="icon">
+                <img src="./icones/github-142-svgrepo-com.svg" alt="Github" />
+              </div>
+              <div class="icon">
+                <img src="./icones/gitlab-svgrepo-com.svg" alt="Gitlab" />
+              </div>
+              <div class="icon">
+                <img
+                  src="./icones/icons8-logo-java-coffee-cup-96.svg"
+                  alt="JAVA"
+                />
+              </div>
+            </div>
+
+            <div class="absolut-link">
+              <a href="#experience">
+                <svg
+                  width="70"
+                  version="1.1"
+                  id="icons_1_"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 128 128"
+                  style="enable-background: new 0 0 128 128"
+                  xml:space="preserve"
+                >
+                  <g id="row2_1_">
+                    <g id="_x35__3_">
+                      <path
+                        class="color-white"
+                        d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zm21.7-63.2L70.4 70.3V41.7c0-2.2-2.3-3.2-4.4-3.2h-4c-2.2 0-3.9 1.8-3.9 3.9v28.4L42.3 58.1c-2.2 0-3.9 1.8-3.9 3.9v7.1L64 95.8l25.6-26.7V62c0-2.2-1.8-3.9-3.9-3.9z"
+                        id="down_1_"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="experience" id="experience">
+          <h2>Téléchargez mon CV pour découvrir mes anciennes postes!</h2>
+          <button id="downloadBtn">Télécharger le CV</button>
+          <div class="formations-postes">
+            <div class="carte un">
+              <h1>Conceptrice Développeuse d'Applications</h1>
+              <p>2024-2025</p>
+            </div>
+            <div class="carte deux">
+              <h1>Responsable de Pharmacie dans une clinique</h1>
+              <p>2015-2017</p>
+            </div>
+            <div class="carte trois"></div>
+            <div class="carte quatre">
+              <h1>Directrice Administrative</h1>
+              <p>2009-2014</p>
+            </div>
+            <div class="carte cinq">
+              <h1>
+                Diplome Master de Recherche Chimie Industrielle et Environnement
+              </h1>
+              <p>2008-2010</p>
+            </div>
+            <div class="carte six">
+              <h1>Cycle Ingénieur Chimie Analytique et Instrumentation</h1>
+              <p>2004-2007</p>
+            </div>
+            <div class="carte sept">
+              <h1>Cycle Préparatoire Biologie-Géologie</h1>
+              <p>2002-2004</p>
+            </div>
+            <div class="carte huit"></div>
+            <div class="carte neuf">
+              <h1>Baccalauréat Scientifique</h1>
+              <p>2002</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+          <h1>Mes Projets</h1>
+          <h2>Découvrez mes premiers pas en programmation!</h2>
+          <div class="projets">
+            <div class="projet1"></div>
+            <div class="projet2"></div>
+            <div class="projet3"></div>
+            <div class="projet4"></div>
+          </div>
+        </section>
+
+        <section class="citation">
+          <p>
+            "Le plus grand risque est de n'en prendre aucun. Dans un monde qui
+            change si rapidement, la seule stratégie qui vous mènera à l'échec
+            est celle consistant à ne jamais prendre de risque" - Mark
+            Zuckerberg
+          </p>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="photo">
+            <img
+              src="./images/img1.jpg"
+              alt="contactez moi pour un entretien"
+              class="inclined-image"
+            />
+          </div>
+          <div class="myForm">
+            <form id="myForm">
+              <label for="name">Nom:</label>
+              <input type="text" id="name" name="name" />
+              <br /><br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <br /><br />
+              <label for="tel">Télephone:</label>
+              <input type="tel" id="tel" name="tel" />
+              <br /><br />
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="7"
+                cols="50"
+              ></textarea>
+              <br /><br />
+              <input type="submit" value="submit" />
+            </form>
+            <div id="errorMessages"></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-logo">
+          <img src="./images/IMG_7106.PNG" alt="mon logo" />
+        </div>
+
+        <a href="https://www.linkedin.com/in/donia-turki" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/turkidonia/turkidonia.github.io"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/your-profile" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a id="back-to-top" href="#">TOP</a>
+      </footer>
     </div>
-    <script src="script.js"></script>  
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
